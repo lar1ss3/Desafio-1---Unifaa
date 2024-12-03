@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluxo de Caixa</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
     <header>
-        <h1>Fluxo de Caixa</h1>
+        <h1>Controle de Fluxo de Caixa</h1>
         <p>Bem-vindo, <span id="usuarioNome">Usuário</span></p>
     </header>
 
     <main>
         <section id="resumo">
             <div>
-                <h3>Total A Pagar: <span id="totalPagar">R$ 0,00</span></h3>
-                <h3>Total A Receber: <span id="totalReceber">R$ 0,00</span></h3>
-                <h3>Diferença: <span id="diferenca">R$ 0,00</span></h3>
+                <h3>Total A Pagar:</h3>
+                <span id="totalPagar">R$ 0,00</span>
             </div>
-            <button onclick="window.location.href='crud.html'">Cadastrar Débito/Crédito</button>
+            <div>
+                <h3>Total A Receber:</h3>
+                <span id="totalReceber">R$ 0,00</span>
+            </div>
+            <div>
+                <h3>Diferença:</h3>
+                <span id="diferenca">R$ 0,00</span>
+            </div>
         </section>
 
         <section id="grafico">
-            <p>Gráfico de comparação entre despesas e receitas (gráfico opcional)</p>
-            <!-- Gráfico pode ser implementado futuramente -->
+            <p>Gráfico de comparação entre despesas e receitas (a ser implementado).</p>
+            <!-- Aqui poderia ser implementado um gráfico, usando por exemplo o Chart.js -->
         </section>
+
+        <button class="secondary" onclick="window.location.href='crud.html'">Cadastrar Débito/Crédito</button>
     </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
 
     <script src="js/script.js"></script>
 </body>
