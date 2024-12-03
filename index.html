@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de Caixa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Fluxo de Caixa</h1>
+        <p>Bem-vindo, <span id="usuarioNome">Usuário</span></p>
+    </header>
+
+    <main>
+        <section id="resumo">
+            <div>
+                <h3>Total A Pagar: <span id="totalPagar">R$ 0,00</span></h3>
+                <h3>Total A Receber: <span id="totalReceber">R$ 0,00</span></h3>
+                <h3>Diferença: <span id="diferenca">R$ 0,00</span></h3>
+            </div>
+            <button onclick="window.location.href='crud.html'">Cadastrar Débito/Crédito</button>
+        </section>
+
+        <section id="grafico">
+            <p>Gráfico de comparação entre despesas e receitas (gráfico opcional)</p>
+            <!-- Gráfico pode ser implementado futuramente -->
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
