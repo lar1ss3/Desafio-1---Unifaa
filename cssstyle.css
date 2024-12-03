@@ -1,53 +1,156 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Geral */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Cabeçalho */
 header {
     background-color: #4CAF50;
-    color: white;
-    padding: 20px;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Seção Principal */
 main {
-    padding: 20px;
+    padding: 40px 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Inputs e Select */
+input, select {
+    font-size: 1rem;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50;
+    background-color: #fff;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
 }
 
 button {
     background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    color: #fff;
+    padding: 15px;
     border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
     cursor: pointer;
-    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-form {
+/* Botões de navegação */
+button.secondary {
+    background-color: #007bff;
+    margin-top: 10px;
+}
+
+button.secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Cards de resumo */
+#resumo {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
 }
 
-input,
-select {
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 5px;
+#resumo div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 
-a {
-    color: #4CAF50;
+#resumo h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 
-a:hover {
-    text-decoration: underline;
+#resumo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#grafico {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#grafico p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
