@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Débitos e Créditos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Débitos e Créditos</h1>
+    </header>
+
+    <main>
+        <form id="formCadastro">
+            <label for="categoria">Categoria</label>
+            <select id="categoria">
+                <option value="alimentacao">Alimentação</option>
+                <option value="transporte">Transporte</option>
+                <option value="saude">Saúde</option>
+                <option value="lazer">Lazer</option>
+            </select>
+
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" required>
+
+            <label for="valor">Valor</label>
+            <input type="number" id="valor" required>
+
+            <label for="data">Data</label>
+            <input type="date" id="data" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p><a href="fluxo-caixa.html">Voltar para o Fluxo de Caixa</a></p>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
