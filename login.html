@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluxo de Caixa</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Controle de Fluxo de Caixa</h1>
-        <p>Bem-vindo, <span id="usuarioNome">Usuário</span></p>
+        <h1>Login</h1>
     </header>
 
     <main>
-        <section id="resumo">
-            <div>
-                <h3>Total A Pagar:</h3>
-                <span id="totalPagar">R$ 0,00</span>
-            </div>
-            <div>
-                <h3>Total A Receber:</h3>
-                <span id="totalReceber">R$ 0,00</span>
-            </div>
-            <div>
-                <h3>Diferença:</h3>
-                <span id="diferenca">R$ 0,00</span>
-            </div>
-        </section>
+        <form>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required>
 
-        <section id="grafico">
-            <p>Gráfico de comparação entre despesas e receitas (a ser implementado).</p>
-            <!-- Aqui poderia ser implementado um gráfico, usando por exemplo o Chart.js -->
-        </section>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" required>
 
-        <button class="secondary" onclick="window.location.href='crud.html'">Cadastrar Débito/Crédito</button>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p>Não tem uma conta? <a href="cadastro.html">Crie uma conta</a></p>
     </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
 
     <script src="js/script.js"></script>
 </body>
